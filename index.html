@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trisha Anil</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("theme");
+        if (savedTheme === "light" || savedTheme === "dark") {
+          document.documentElement.setAttribute("data-theme", savedTheme);
+        }
+      } catch (error) {
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="Jump to top introduction section">
+        <span class="brand-text">Trisha Anil</span>
+      </a>
+
+      <nav class="top-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+      </nav>
+
+      <div class="header-actions">
+        <div class="header-social" aria-label="Profile links">
+          <a href="mailto:trisha.c.anil@gmail.com" aria-label="Email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></svg>
+          </a>
+          <a href="https://github.com/trisha-c-a" target="_blank" rel="noreferrer" aria-label="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/trisha-anil/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M19 0H5a5 5 0 0 0-5 5v14a5 5 0 0 0 5 5h14a5 5 0 0 0 5-5V5a5 5 0 0 0-5-5zM8 19H5V8h3v11zM6.5 6.732c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zM20 19h-3v-5.604c0-3.368-4-3.113-4 0V19h-3V8h3v1.765c1.396-2.586 7-2.777 7 2.476V19z"/></svg>
+          </a>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Switch color theme" aria-pressed="false">
+          <span class="toggle-icon" aria-hidden="true">
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4"/>
+              <path d="M12 2v2"/>
+              <path d="M12 20v2"/>
+              <path d="m4.93 4.93 1.41 1.41"/>
+              <path d="m17.66 17.66 1.41 1.41"/>
+              <path d="M2 12h2"/>
+              <path d="M20 12h2"/>
+              <path d="m6.34 17.66-1.41 1.41"/>
+              <path d="m19.07 4.93-1.41 1.41"/>
+            </svg>
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 1 0 9.8 9.8z"/>
+            </svg>
+          </span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="panel intro-hero" aria-labelledby="home-heading">
+      <div class="intro-copy">
+        <h1 id="home-heading">Hello, It's Trisha</h1>
+        <p class="intro-summary">
+          A machine learning engineer based in Houston, TX.<br>
+          I build AI-powered systems to automate workflows and help catch what breaks behind the scenes.
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="panel panel-hero" aria-labelledby="about-heading">
+      <div class="hero-left">
+        <div class="section-heading-wrap">
+          <h2 id="about-heading">About</h2>
+        </div>
+        <div class="hero-content">
+          <p>
+            I currently work at Oceaneering International, where I build LLM workflows that extract and surface insights from unstructured data.
+            Previously, I developed machine learning models at the intersection of computer vision and NLP.<br>
+          </p>
+          </div>
+          <p class="skills-label">Tools and technologies I currently work with:</p>
+        <ul class="skills-row" aria-label="Core skills">
+          <li>Python</li>
+          <li>Javascript</li>
+          <li>SQL</li>
+          <li>PyTorch</li>
+          <li>PowerBI</li>
+          <li>Azure</li>
+        </ul>
+          <div class="hero-content">
+          <p>
+            Outside of work, you’ll find me strength training, out on a run, or reading anything from historical fiction to books on biology and psychology.
+          </p>
+        </div>
+      </div>
+      <div class="hero-photo" aria-label="Profile photo">
+        <img src="assets/profile-image.jpeg" alt="Profile image" class="profile-image" />
+      </div>
+    </section>
+
+    <section id="experience" class="panel" aria-labelledby="experience-heading">
+      <div class="section-heading-wrap">
+        <h2 id="experience-heading">Experience</h2>
+      </div>
+
+      <div class="exp-layout">
+        <div class="exp-company-list" role="tablist" aria-label="Companies">
+          <button class="exp-company-btn is-active" role="tab" aria-selected="true" aria-controls="exp-panel-0" id="exp-tab-0">Oceaneering International</button>
+          <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-1" id="exp-tab-1">Boston University</button>
+          <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-2" id="exp-tab-2">General Electric</button>
+          <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-3" id="exp-tab-3">Manipal Institute of Technology</button>
+        </div>
+
+        <div class="exp-detail">
+          <div class="exp-panel" id="exp-panel-0" role="tabpanel" aria-labelledby="exp-tab-0">
+            <h3 class="exp-role">Machine Learning &amp; Robotics Engineer</h3>
+            <p class="exp-date">Feb 2025 - Present</p>
+            <ul>
+              <li>Reduced report review cycles by ~50% by developing an LLM-driven pipeline on Azure to extract and summarize insights from unstructured documents.</li>
+              <li>Designing monitoring and alerting systems using Azure Application Insights to track system performance, enabling
+proactive detection of downtime and resource inefficiencies for 20 applications.</li>
+              <li>Built PowerBI dashboards for 3 clients, transforming data into insights to support decision-making.</li>
+              <li>Cut sprint planning overhead by designing automations for team capacity forecasting and performance analysis on JIRA.</li>
+              <li>Delivered $200K+ in R&D savings by analyzing performance data from 25 robot platforms, identifying critical
+gaps, and informing investment decisions with quantitative insights.</li>
+            </ul>
+          </div>
+
+          <div class="exp-panel" id="exp-panel-1" role="tabpanel" aria-labelledby="exp-tab-1" hidden>
+            <h3 class="exp-role">Graduate Machine Learning Researcher</h3>
+            <p class="exp-date">Jun 2023 - May 2024</p>
+            <ul>
+              <li>Built a video-to-text deep learning pipeline for sign language translation, combining CNN-based feature extraction
+with transformer-based sequence modeling to achieve 64.7% accuracy.</li>
+              <li>Reduced inference latency by 10% through the integration of rotary positional embeddings (RoPE) and multi-query attention.</li>
+            </ul>
+          </div>
+
+          <div class="exp-panel" id="exp-panel-2" role="tabpanel" aria-labelledby="exp-tab-2" hidden>
+            <h3 class="exp-role">Data Engineering Intern</h3>
+            <p class="exp-date">Jan 2022 - Jul 2022</p>
+            <ul>
+              <li>Presented research on machine learning models to 40+ data analysts, software engineers and product managers.</li>
+              <li>Built SQL functions for sales data processing, enabling automated reporting across finance teams.</li>
+              <li>Created technical documentation for 5 finance automation projects moving from manual to digital workflows.</li>
+            </ul>
+          </div>
+
+          <div class="exp-panel" id="exp-panel-3" role="tabpanel" aria-labelledby="exp-tab-3" hidden>
+            <h3 class="exp-role">Undergraduate Machine Learning Researcher</h3>
+            <p class="exp-date">Jun 2020 - Dec 2021</p>
+            <ul>
+              <li>Designed a semantic segmentation network that segments rivers in Synthetic Aperture Radar (SAR) images.</li>
+              <li>Optimized model size by 71% through depthwise separable convolutions and multi-stage loss functions.</li>
+              <li>Achieved a segmentation accuracy of 99.03%, outperforming state-of-the-art algorithms.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="publications" class="panel" aria-labelledby="publications-heading">
+      <div class="section-heading-wrap">
+        <h2 id="publications-heading">Publications</h2>
+      </div>
+
+      <div class="publications-list">
+
+        <article class="pub-card">
+          <img class="card-img-placeholder" src="assets/publication-media/text-graphics.png" alt="Text to Graphics by Program Synthesis with Error Correction" />
+          <div class="pub-card-body">
+            <h3 class="pub-title">Text to Graphics by Program Synthesis with Error Correction</h3>
+            <p class="pub-venue">CVPR Generative Models for Computer Vision Workshop (GCV) &mdash; 2023</p>
+            <p class="pub-desc">Top Finding: Program synthesis with error correction improves precision and enables reliable procedural rendering in text-to-graphics tasks.</p>
+          </div>
+          <div class="pub-card-footer">
+            <a class="pub-link" href="https://generative-vision.github.io/workshop-CVPR-23/data/56.pdf" target="_blank" rel="noreferrer" aria-label="View Publication One">
+              <span>View Publication</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+
+        <article class="pub-card">
+          <img class="card-img-placeholder" src="assets/publication-media/martinet.png" alt="MartiNet: An Efficient Approach For River Segmentation In SAR Images" />
+          <div class="pub-card-body">
+            <h3 class="pub-title">MartiNet: An Efficient Approach For River Segmentation In SAR Images</h3>
+            <p class="pub-venue">IEEE CONECCT, Geoscience and Remote Sensing Technologies &mdash; 2022</p>
+            <p class="pub-desc">Key Contribution: Developed a semantic segmentation model that surpassed state-of-the-art performance while using 71% fewer parameters.</p>
+          </div>
+          <div class="pub-card-footer">
+            <a class="pub-link" href="https://ieeexplore.ieee.org/abstract/document/9865830" target="_blank" rel="noreferrer" aria-label="View Publication Two">
+              <span>View Publication</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects" class="panel" aria-labelledby="projects-heading">
+      <div class="section-heading-wrap">
+        <h2 id="projects-heading">Projects</h2>
+      </div>
+
+      <div class="projects-carousel" data-projects-carousel>
+        <div class="projects-carousel-row" aria-label="Project carousel controls">
+          <button class="projects-control" type="button" data-projects-prev aria-label="Show previous projects">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+
+          <div class="projects-carousel-viewport">
+            <div class="projects-track">
+              <article class="project-card">
+              <img class="card-img-placeholder" src="assets/project-media/office.png" alt="YOLOv3 on 'The Office'" />
+              <h3>YOLOv3 on 'The Office'</h3>
+              <p class="project-desc">Fine-tuned the YOLOv3 object detection model on a custom dataset characters from <em>The Office</em>.</p>
+              <div class="project-footer">
+                <p class="stack">Python, TensorFlow, OpenCV</p>
+                <a class="github-link" href="https://github.com/trisha-c-a/The_Office_YOLOv3" target="_blank" rel="noreferrer" aria-label="GitHub repo for Literature Insight Recommender"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </article>
+            
+            <article class="project-card">
+              <img class="card-img-placeholder" src="assets/project-media/subj.png" alt="Subjectivity Detection in News" />
+              <h3>Subjectivity Detection in News</h3>
+              <p class="project-desc">Analyzed language models, such as BERT and GPT-2, to detect subjectivity and bias in news articles.</p>
+              <div class="project-footer">
+                <p class="stack">Python, PyTorch, NLTK, Pandas</p>
+                <a class="github-link" href="https://github.com/trisha-c-a/Subjectivity-Detection-in-News-Articles" target="_blank" rel="noreferrer" aria-label="GitHub repo for Predictive Model Evaluation Toolkit"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img class="card-img-placeholder" src="assets/project-media/sketch.png" alt="Etch-a-Sketch" />
+              <h3>Etch-a-Sketch</h3>
+              <p class="project-desc">A browser-based drawing tool featuring dynamic grid generation and real-time user interaction</p>
+              <div class="project-footer">
+                <p class="stack">HTML, CSS, JavaScript</p>
+                <a class="github-link" href="https://github.com/trisha-c-a/etch-a-sketch" target="_blank" rel="noreferrer" aria-label="GitHub repo for Feature Store Explorer"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img class="card-img-placeholder" src="assets/project-media/equity.png" alt="Equity in Healthcare" />
+              <h3>Equity in Healthcare</h3>
+              <p class="project-desc">Utilised regression models to estimate the time it takes for cancer patients to receive a metastatic diagnosis.</p>
+              <div class="project-footer">
+                <p class="stack">Python, Jupyter, Pandas, Tableau</p>
+                <a class="github-link" href="https://github.com/trisha-c-a/Equity-in-Healthcare" target="_blank" rel="noreferrer" aria-label="GitHub repo for QA Automation Harness"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <img class="card-img-placeholder" src="assets/project-media/library.png" alt="The Library Application" />
+              <h3>The Library Application</h3>
+              <p class="project-desc">A interactive front-end application for managing a personal library and tracking reading status.</p>
+              <div class="project-footer">
+                <p class="stack">HTML, CSS, JavaScript</p>
+                <a class="github-link" href="https://github.com/trisha-c-a/Library" target="_blank" rel="noreferrer" aria-label="GitHub repo for Data Quality Monitoring Dashboard"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a>
+              </div>
+            </article>
+            </div>
+          </div>
+
+          <button class="projects-control" type="button" data-projects-next aria-label="Show next projects">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>© All rights reserved.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
