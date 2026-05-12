@@ -28,12 +28,18 @@
         <span class="brand-text">Trisha Anil</span>
       </a>
 
-      <nav class="top-nav" aria-label="Primary">
+      <nav id="primaryNav" class="top-nav" aria-label="Primary">
         <a href="#about">About</a>
         <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
       </nav>
+
+      <button id="mobileMenuToggle" class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </button>
 
       <div class="header-actions">
         <div class="header-social" aria-label="Profile links">
@@ -123,6 +129,11 @@
           <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-1" id="exp-tab-1">Boston University</button>
           <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-2" id="exp-tab-2">General Electric</button>
           <button class="exp-company-btn" role="tab" aria-selected="false" aria-controls="exp-panel-3" id="exp-tab-3">Manipal Institute of Technology</button>
+        </div>
+
+        <div class="exp-mobile-nav" aria-label="Mobile company navigator">
+          <p class="exp-mobile-company" id="expMobileCompanyLabel">Oceaneering International</p>
+          <input type="range" class="exp-mobile-slider" id="expMobileSlider" min="0" max="3" value="0" aria-label="Navigate between companies">
         </div>
 
         <div class="exp-detail">

@@ -1,8 +1,11 @@
 (function () {
   var root = document.documentElement;
   var themeToggle = document.getElementById("themeToggle");
+  var mobileMenuToggle = document.getElementById("mobileMenuToggle");
+  var topNav = document.getElementById("primaryNav");
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".top-nav a"));
   var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
+  var mobileNavQuery = window.matchMedia("(max-width: 759px)");
 
 
   function getCurrentTheme() {
@@ -47,11 +50,44 @@
     });
   }
 
+  function setMobileMenuState(isOpen) {
+    if (!mobileMenuToggle || !topNav) {
+      return;
+    }
+
+    mobileMenuToggle.setAttribute("aria-expanded", String(isOpen));
+    mobileMenuToggle.setAttribute("aria-label", isOpen ? "Close menu" : "Open menu");
+    topNav.classList.toggle("is-open", isOpen);
+  }
+
   if (themeToggle) {
     themeToggle.addEventListener("click", function () {
       var nextTheme = getCurrentTheme() === "dark" ? "light" : "dark";
       setTheme(nextTheme);
     });
+  }
+
+  if (mobileMenuToggle && topNav) {
+    mobileMenuToggle.addEventListener("click", function () {
+      var isOpen = mobileMenuToggle.getAttribute("aria-expanded") === "true";
+      setMobileMenuState(!isOpen);
+    });
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+        if (mobileNavQuery.matches) {
+          setMobileMenuState(false);
+        }
+      });
+    });
+
+    window.addEventListener("resize", function () {
+      if (!mobileNavQuery.matches) {
+        setMobileMenuState(false);
+      }
+    });
+
+    setMobileMenuState(false);
   }
 
   applyThemeUI(getCurrentTheme());
@@ -61,6 +97,9 @@
   // Experience tab switching
   var expTabs = Array.prototype.slice.call(document.querySelectorAll(".exp-company-btn"));
   var expPanels = Array.prototype.slice.call(document.querySelectorAll(".exp-panel"));
+  var expMobileSlider = document.getElementById("expMobileSlider");
+  var expMobileCompanyLabel = document.getElementById("expMobileCompanyLabel");
+  var currentExpIndex = 0;
   var projectsCarousel = document.querySelector("[data-projects-carousel]");
   var projectsTrack = projectsCarousel ? projectsCarousel.querySelector(".projects-track") : null;
   var projectsPrevButton = projectsCarousel ? projectsCarousel.querySelector("[data-projects-prev]") : null;
@@ -71,6 +110,8 @@
   var PROJECT_ROTATION_DELAY = 4500;
 
   function switchExpTab(index) {
+    currentExpIndex = index;
+
     expTabs.forEach(function (tab, i) {
       var active = i === index;
       tab.classList.toggle("is-active", active);
@@ -83,6 +124,21 @@
         panel.setAttribute("hidden", "");
       }
     });
+
+    if (expMobileCompanyLabel && expTabs[index]) {
+      expMobileCompanyLabel.textContent = expTabs[index].textContent.trim();
+    }
+
+    if (expMobileSlider) {
+      expMobileSlider.value = index;
+
+      var segmentSize = 100 / Math.max(expTabs.length, 1);
+      var segmentStart = index * segmentSize;
+      var segmentEnd = segmentStart + segmentSize;
+
+      expMobileSlider.style.setProperty("--exp-segment-start", segmentStart + "%");
+      expMobileSlider.style.setProperty("--exp-segment-end", segmentEnd + "%");
+    }
   }
 
   expTabs.forEach(function (tab, i) {
@@ -104,6 +160,29 @@
       }
     });
   });
+
+  if (expMobileSlider && expTabs.length > 0) {
+    expMobileSlider.min = "0";
+    expMobileSlider.max = String(expTabs.length - 1);
+
+    expMobileSlider.addEventListener("input", function () {
+      var index = parseInt(expMobileSlider.value, 10);
+      switchExpTab(index);
+    });
+  }
+
+  if (expTabs.length > 0) {
+    var initialExpIndex = 0;
+
+    for (var idx = 0; idx < expTabs.length; idx += 1) {
+      if (expTabs[idx].classList.contains("is-active")) {
+        initialExpIndex = idx;
+        break;
+      }
+    }
+
+    switchExpTab(initialExpIndex);
+  }
 
   function getVisibleProjectCount() {
     if (window.matchMedia("(max-width: 600px)").matches) {
