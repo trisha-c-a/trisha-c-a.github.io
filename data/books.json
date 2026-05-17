@@ -1,0 +1,224 @@
+{
+  "lastUpdated": "2026-05-17T22:24:56.381Z",
+  "refreshStatus": "success",
+  "books": [
+    {
+      "goodreadsId": "34051011",
+      "title": "Pachinko",
+      "author": "Min Jin Lee",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1766879949l/34051011._SY475_.jpg",
+      "dateRead": "2026-01-01",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [
+        "Historical Fiction"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "35133922",
+      "title": "Educated",
+      "author": "Tara Westover",
+      "isbn": "0399590501",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1774287363l/35133922._SY475_.jpg",
+      "dateRead": "2026-01-01",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [
+        "Memoir"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "40611510",
+      "title": "The Last Lecture",
+      "author": "Randy Pausch",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1529682044l/40611510._SX318_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Memoir"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "16298",
+      "title": "A Murder Is Announced (Miss Marple, #4)",
+      "author": "Agatha Christie",
+      "isbn": "1579126294",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1348508635l/16298.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Mystery"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "27213168",
+      "title": "I Contain Multitudes: The Microbes Within Us and a Grander View of Life",
+      "author": "Ed Yong",
+      "isbn": "0062368591",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1445606162l/27213168.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Biology"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "61153739",
+      "title": "Outlive: The Science & Art of Longevity",
+      "author": "Peter Attia",
+      "isbn": "0593236599",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1700067079l/61153739._SX318_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Health",
+        "Biology"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "201736852",
+      "title": "Killers of the Flower Moon: The Osage Murders and the Birth of the FBI",
+      "author": "David Grann",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1699301418l/201736852.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "True Crime",
+        "History"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "4906099",
+      "title": "A Thousand Splendid Suns",
+      "author": "Khaled Hosseini",
+      "isbn": "1101010908",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660258212l/4906099._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Historical Fiction"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "44090787",
+      "title": "The Kite Runner",
+      "author": "Khaled Hosseini",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1550870263l/44090787._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Historical Fiction"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "49977581",
+      "title": "Angels & Demons (Robert Langdon, #1)",
+      "author": "Dan Brown",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1751268588l/49977581._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Thriller",
+        "Mystery"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "56395724",
+      "title": "The Comfort Crisis: Embrace Discomfort to Reclaim Your Wild, Happy, Healthy Self",
+      "author": "Michael Easter",
+      "isbn": "0593138775",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1608782823l/56395724._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Self-Help"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "217364842",
+      "title": "Death on the Nile",
+      "author": "Agatha Christie",
+      "isbn": "1998488357",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1723321957l/217364842._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Mystery"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "60472777",
+      "title": "The Murder of Roger Ackroyd",
+      "author": "Agatha Christie",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1645513475l/60472777._SY475_.jpg",
+      "dateRead": "2025-01-01",
+      "yearRead": 2025,
+      "hasDate": true,
+      "genres": [
+        "Mystery"
+      ],
+      "genreEnrichedFrom": "none"
+    }
+  ],
+  "stats": {
+    "totalBooks": 13,
+    "yearBreakdown": {
+      "2025": 11,
+      "2026": 2
+    },
+    "genreCount": {
+      "Historical Fiction": 3,
+      "Memoir": 2,
+      "Mystery": 4,
+      "Biology": 2,
+      "Health": 1,
+      "True Crime": 1,
+      "History": 1,
+      "Thriller": 1,
+      "Self-Help": 1
+    },
+    "minYear": 2025,
+    "maxYear": 2026
+  }
+}

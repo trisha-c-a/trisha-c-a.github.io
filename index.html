@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trisha Anil</title>
-  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" href="./assets/favicon.ico" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -44,7 +44,7 @@
             Offscreen
           </a>
           <div class="nav-dropdown-menu" id="hobbiesMenu" role="menu" aria-label="Hobbies subsections">
-            <a href="#reading" role="menuitem">Favorite Reads</a>
+            <a href="#reading" role="menuitem">Reading</a>
           </div>
         </div>
       </nav>
@@ -316,33 +316,35 @@ with transformer-based sequence modeling to achieve 64.7% accuracy.</li>
       </div>
 
       <section id="reading" class="hobby-subsection" aria-labelledby="reading-heading">
-        <h3 id="reading-heading" class="hobby-subsection-title">Favorite Reads</h3>
+        <h3 id="reading-heading" class="hobby-subsection-title">Reading</h3>
 
-        <div class="reading-grid" aria-label="Favorite books">
-          <section class="reading-group">
-            <div class="reading-row">
-              <article class="reading-card">
-                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1445606162i/27213168.jpg" alt="Cover of I Contain Multitudes" loading="lazy" />
-              </article>
-
-              <article class="reading-card">
-                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1529682044i/40611510.jpg" alt="Cover of The Last Lecture" loading="lazy" />
-              </article>
-
-              <article class="reading-card">
-                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg" alt="Cover of Thinking, Fast and Slow" loading="lazy" />
-              </article>
-
-              <article class="reading-card">
-                <img class="reading-cover" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660258212l/4906099.jpg" alt="Cover of A Thousand Splendid Suns" loading="lazy" />
-              </article>
-
-              <article class="reading-card">
-                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766879949i/34051011.jpg" alt="Cover of Pachinko" loading="lazy" />
-              </article>
-            </div>
-          </section>
+        <div class="reading-controls" aria-label="Reading filters">
+          <label class="reading-filter-label" for="readingYearFilter">Year</label>
+          <select id="readingYearFilter" class="reading-year-filter" aria-label="Filter genres by year">
+            <option value="all">All years</option>
+          </select>
         </div>
+
+        <div class="reading-analytics-grid">
+          <article class="reading-analytics-card" aria-labelledby="reading-books-year-title">
+            <h4 id="reading-books-year-title" class="reading-card-title">Yearly Reading Volume</h4>
+            <div id="booksPerYearChart" class="books-year-chart" role="img" aria-label="Bar chart showing books read per year"></div>
+          </article>
+
+          <article class="reading-analytics-card" aria-labelledby="reading-genre-cloud-title">
+            <h4 id="reading-genre-cloud-title" class="reading-card-title">Genres Explored</h4>
+            <div id="genreWordCloud" class="genre-word-cloud" role="img" aria-label="Word cloud showing top genres"></div>
+          </article>
+        </div>
+
+        <section class="reading-favorites reading-analytics-card" aria-labelledby="reading-favorites-title">
+          <h4 id="reading-favorites-title" class="reading-card-title reading-favorites-title">All-Time Favorites</h4>
+          <div class="reading-grid reading-fallback-grid" id="readingFallbackGrid" aria-label="Favorite books">
+            <section class="reading-group">
+              <div class="reading-row" id="readingFallbackRow"></div>
+            </section>
+          </div>
+        </section>
       </section>
     </section>
 
