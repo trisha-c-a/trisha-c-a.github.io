@@ -3,6 +3,7 @@
   var themeToggle = document.getElementById("themeToggle");
   var mobileMenuToggle = document.getElementById("mobileMenuToggle");
   var topNav = document.getElementById("primaryNav");
+  var hobbiesToggle = document.getElementById("hobbiesToggle");
   var navLinks = Array.prototype.slice.call(document.querySelectorAll(".top-nav a"));
   var sections = Array.prototype.slice.call(document.querySelectorAll("main section[id]"));
   var mobileNavQuery = window.matchMedia("(max-width: 759px)");
@@ -48,6 +49,11 @@
       var isActive = link.getAttribute("href") === "#" + activeId;
       link.classList.toggle("is-active", isActive);
     });
+
+    if (hobbiesToggle) {
+      var hobbiesIsActive = activeId === "hobbies" || activeId === "reading";
+      hobbiesToggle.classList.toggle("is-active", hobbiesIsActive);
+    }
   }
 
   function setMobileMenuState(isOpen) {
@@ -108,7 +114,6 @@
   var projectIsAnimating = false;
   var projectTransitionFallbackTimer = null;
   var PROJECT_ROTATION_DELAY = 4500;
-
   function switchExpTab(index) {
     currentExpIndex = index;
 

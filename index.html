@@ -33,6 +33,20 @@
         <a href="#experience">Experience</a>
         <a href="#publications">Publications</a>
         <a href="#projects">Projects</a>
+        <div class="nav-dropdown" id="hobbiesDropdown">
+          <a
+            id="hobbiesToggle"
+            class="nav-dropdown-toggle"
+            aria-haspopup="true"
+            aria-controls="hobbiesMenu"
+            href="#hobbies"
+          >
+            Offscreen
+          </a>
+          <div class="nav-dropdown-menu" id="hobbiesMenu" role="menu" aria-label="Hobbies subsections">
+            <a href="#reading" role="menuitem">Favorite Reads</a>
+          </div>
+        </div>
       </nav>
 
       <button id="mobileMenuToggle" class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-controls="primaryNav" aria-expanded="false">
@@ -109,7 +123,7 @@
         </ul>
           <div class="hero-content">
           <p>
-            Outside of work, you’ll find me strength training, out on a run, or reading anything from historical fiction to books on biology and psychology.
+            When I'm not tinkering with code, you’ll find me strength training, out on a run, or reading anything from historical fiction to books on biology and psychology.
           </p>
         </div>
       </div>
@@ -296,10 +310,46 @@ with transformer-based sequence modeling to achieve 64.7% accuracy.</li>
       </div>
     </section>
 
+    <section id="hobbies" class="panel" aria-labelledby="hobbies-heading">
+      <div class="section-heading-wrap">
+        <h2 id="hobbies-heading">Offscreen</h2>
+      </div>
+
+      <section id="reading" class="hobby-subsection" aria-labelledby="reading-heading">
+        <h3 id="reading-heading" class="hobby-subsection-title">Favorite Reads</h3>
+
+        <div class="reading-grid" aria-label="Favorite books">
+          <section class="reading-group">
+            <div class="reading-row">
+              <article class="reading-card">
+                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1445606162i/27213168.jpg" alt="Cover of I Contain Multitudes" loading="lazy" />
+              </article>
+
+              <article class="reading-card">
+                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1529682044i/40611510.jpg" alt="Cover of The Last Lecture" loading="lazy" />
+              </article>
+
+              <article class="reading-card">
+                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1317793965i/11468377.jpg" alt="Cover of Thinking, Fast and Slow" loading="lazy" />
+              </article>
+
+              <article class="reading-card">
+                <img class="reading-cover" src="https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1660258212l/4906099.jpg" alt="Cover of A Thousand Splendid Suns" loading="lazy" />
+              </article>
+
+              <article class="reading-card">
+                <img class="reading-cover" src="https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1766879949i/34051011.jpg" alt="Cover of Pachinko" loading="lazy" />
+              </article>
+            </div>
+          </section>
+        </div>
+      </section>
+    </section>
+
   </main>
 
   <footer class="site-footer">
-    <p>© All rights reserved.</p>
+    <p>© 2026 Trisha Anil</p>
   </footer>
 
   <script src="js/main.js"></script>

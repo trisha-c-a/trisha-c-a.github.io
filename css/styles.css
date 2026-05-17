@@ -53,6 +53,18 @@ body {
   background-attachment: fixed;
 }
 
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .site-header {
   position: sticky;
   top: 0;
@@ -140,6 +152,9 @@ html[data-theme="light"] .site-header {
   text-decoration: none;
   color: var(--muted);
   font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
   border-bottom: 2px solid transparent;
   padding-bottom: 0.2rem;
   transition: color 0.2s ease, border-color 0.2s ease;
@@ -150,6 +165,90 @@ html[data-theme="light"] .site-header {
 .top-nav a.is-active {
   color: var(--text);
   border-color: var(--accent);
+}
+
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-dropdown::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 100%;
+  height: 0.45rem;
+}
+
+.nav-dropdown-toggle {
+  text-decoration: none;
+  color: var(--muted);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+  border-bottom: 2px solid transparent;
+  padding: 0 0 0.2rem;
+  position: relative;
+  top: -2px;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.nav-dropdown-toggle:hover,
+.nav-dropdown-toggle:focus-visible,
+.nav-dropdown-toggle.is-active,
+.nav-dropdown.is-open .nav-dropdown-toggle {
+  color: var(--text);
+  border-color: var(--accent);
+}
+
+.nav-dropdown-menu {
+  position: absolute;
+  top: calc(100% + 0.35rem);
+  left: -0.9rem;
+  transform: none;
+  width: max-content;
+  min-width: 0;
+  padding: 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg-elev) 92%, transparent);
+  display: inline-grid;
+  gap: 0.2rem;
+  justify-items: stretch;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s ease;
+  z-index: 20;
+}
+
+.nav-dropdown-menu a {
+  display: block;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  padding: 0.35rem 0.45rem;
+  font-size: 0.9rem;
+  color: var(--muted);
+  text-decoration: none;
+  text-align: left;
+}
+
+.nav-dropdown-menu a:hover,
+.nav-dropdown-menu a:focus-visible,
+.nav-dropdown-menu a.is-active {
+  color: var(--text);
+  background: color-mix(in srgb, var(--bg-card) 78%, transparent);
+}
+
+.nav-dropdown:hover .nav-dropdown-menu,
+.nav-dropdown:focus-within .nav-dropdown-menu,
+.nav-dropdown.is-open .nav-dropdown-menu {
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .header-actions {
@@ -251,9 +350,9 @@ main {
 }
 
 .panel {
-  scroll-margin-top: 6rem;
+  scroll-margin-top: 4rem;
   margin-block: 0;
-  min-height: calc(100svh - 4.5rem);
+  /* min-height: calc(100svh - 4.5rem); */
   padding-block-start: 1.8rem;
   padding-block-end: 6rem;
   padding-inline: 0;
@@ -279,6 +378,7 @@ main {
 .projects-carousel-viewport {
   overflow: hidden;
   width: 100%;
+  padding-top: 0.6rem;
 }
 
 .projects-track {
@@ -298,6 +398,13 @@ main {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.project-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px rgba(195, 108, 255, 0.1);
+  animation: bounce 0.5s ease-in-out;
 }
 
 .project-card h3 {
@@ -414,6 +521,7 @@ html[data-theme="light"] .project-card .github-link {
 .pub-card:hover {
   border-color: var(--accent);
   box-shadow: 0 4px 24px rgba(195, 108, 255, 0.1);
+  animation: bounce 0.5s ease-in-out;
 }
 
 .pub-card-body {
@@ -721,15 +829,110 @@ html[data-theme="light"] .skills-row li:focus-visible {
   .top-nav a {
     font-size: 0.92rem;
   }
+
+  .nav-dropdown {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+  }
+
+  .nav-dropdown-menu {
+    position: static;
+    transform: none;
+    min-width: 0;
+    width: min(14rem, 100%);
+    margin-top: 0.4rem;
+  }
 }
 
 /* ── Uniform section-start spacing ───────────── */
 #about,
 #experience,
 #publications,
+#hobbies,
 #projects {
   justify-content: flex-start;
   padding-block-start: 0.9rem;
+}
+
+#reading {
+  scroll-margin-top: 8.5rem;
+}
+
+.hobby-subsection {
+  margin-top: 1.35rem;
+}
+
+.hobby-subsection-title {
+  margin: 0;
+  font-size: clamp(1.1rem, 2.6vw, 1.45rem);
+  letter-spacing: 0.03em;
+  color: color-mix(in srgb, var(--text) 95%, var(--muted) 5%);
+}
+
+.reading-grid {
+  margin-top: 1.1rem;
+  display: grid;
+  gap: 1.3rem;
+}
+
+.reading-group {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.reading-row {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  overflow-x: auto;
+  padding-top: 0.6rem;
+  padding-bottom: 0.15rem;
+}
+
+.reading-card {
+  flex: 0 0 calc((100% - 4rem) / 5);
+  min-width: 140px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+}
+
+.reading-card:hover {
+  border-color: var(--accent);
+  box-shadow: 0 4px 24px rgba(195, 108, 255, 0.1);
+  animation: bounce 0.5s ease-in-out;
+}
+
+.reading-cover {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--bg-elev) 90%, transparent);
+  border: 1px solid var(--line);
+}
+
+@media (max-width: 600px) {
+  .reading-row {
+    flex-direction: column;
+    overflow-x: visible;
+    padding-bottom: 0;
+  }
+
+  .reading-card {
+    flex: 0 0 auto;
+    min-width: 0;
+  }
+
+  .reading-card {
+    padding: 0.9rem;
+  }
 }
 
 /* ── Experience Tabs ──────────────────────────── */
@@ -831,19 +1034,6 @@ html[data-theme="light"] .skills-row li:focus-visible {
     grid-template-columns: 1fr;
     align-items: center;
     gap: 0.5rem;
-  }
-
-  .exp-mobile-arrow {
-    border: none;
-    background: transparent;
-    color: var(--text);
-    width: 2rem;
-    height: 2rem;
-    padding: 0;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
   }
 
   .exp-mobile-company {
