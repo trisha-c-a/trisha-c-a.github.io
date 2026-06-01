@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-05-25T09:00:11.586Z",
+  "lastUpdated": "2026-06-01T10:24:38.067Z",
   "refreshStatus": "success",
   "books": [
     {
@@ -199,13 +199,26 @@
         "Mystery"
       ],
       "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "142402923",
+      "title": "Feel-Good Productivity: How to Do More of What Matters to You",
+      "author": "Ali Abdaal",
+      "isbn": "1250865034",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1689695229l/142402923._SY475_.jpg",
+      "dateRead": "2026-05-16",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [],
+      "genreEnrichedFrom": "none"
     }
   ],
   "stats": {
-    "totalBooks": 13,
+    "totalBooks": 14,
     "yearBreakdown": {
       "2025": 11,
-      "2026": 2
+      "2026": 3
     },
     "genreCount": {
       "Historical Fiction": 3,
