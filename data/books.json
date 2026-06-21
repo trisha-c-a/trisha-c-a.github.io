@@ -210,7 +210,7 @@
       "dateRead": "2026-05-16",
       "yearRead": 2026,
       "hasDate": true,
-      "genres": [],
+      "genres": ["Self-Help"],
       "genreEnrichedFrom": "none"
     }
   ],
@@ -229,7 +229,7 @@
       "True Crime": 1,
       "History": 1,
       "Thriller": 1,
-      "Self-Help": 1
+      "Self-Help": 2
     },
     "minYear": 2025,
     "maxYear": 2026
