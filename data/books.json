@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T10:57:31.306Z",
+  "lastUpdated": "2026-06-22T10:43:16.630Z",
   "refreshStatus": "success",
   "books": [
     {
@@ -210,15 +210,30 @@
       "dateRead": "2026-05-16",
       "yearRead": 2026,
       "hasDate": true,
-      "genres": ["Self-Help"],
+      "genres": [
+        "Self-Help"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "246767460",
+      "title": "East of Eden",
+      "author": "John Steinbeck",
+      "isbn": "1998488691",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1768814713l/246767460._SY475_.jpg",
+      "dateRead": "2026-05-14",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [],
       "genreEnrichedFrom": "none"
     }
   ],
   "stats": {
-    "totalBooks": 14,
+    "totalBooks": 15,
     "yearBreakdown": {
       "2025": 11,
-      "2026": 3
+      "2026": 4
     },
     "genreCount": {
       "Historical Fiction": 3,
