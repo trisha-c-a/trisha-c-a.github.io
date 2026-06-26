@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-15T10:57:31.306Z",
+  "lastUpdated": "2026-06-26T22:51:00.829Z",
   "refreshStatus": "success",
   "books": [
     {
@@ -210,15 +210,47 @@
       "dateRead": "2026-05-16",
       "yearRead": 2026,
       "hasDate": true,
-      "genres": ["Self-Help"],
+      "genres": [
+        "Self-Help"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "235364773",
+      "title": "Finding My Way: A Memoir",
+      "author": "Malala Yousafzai",
+      "isbn": "1668054272",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1750867005l/235364773._SY475_.jpg",
+      "dateRead": "2026-06-26",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [
+        "Memoir"
+      ],
+      "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "246767460",
+      "title": "East of Eden",
+      "author": "John Steinbeck",
+      "isbn": "1998488691",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1768814713l/246767460._SY475_.jpg",
+      "dateRead": "2026-05-14",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [
+        "Historical Fiction"
+      ],
       "genreEnrichedFrom": "none"
     }
   ],
   "stats": {
-    "totalBooks": 14,
+    "totalBooks": 16,
     "yearBreakdown": {
       "2025": 11,
-      "2026": 3
+      "2026": 5
     },
     "genreCount": {
       "Historical Fiction": 3,
