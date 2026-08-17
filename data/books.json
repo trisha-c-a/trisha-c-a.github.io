@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-10T06:12:22.450Z",
+  "lastUpdated": "2026-08-17T05:37:32.115Z",
   "refreshStatus": "success",
   "books": [
     {
@@ -244,13 +244,26 @@
         "Historical Fiction"
       ],
       "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "233004729",
+      "title": "AQ: A New Kind of Intelligence for a World That's Always Changing",
+      "author": "Liz Tran",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1750992975l/233004729._SX318_.jpg",
+      "dateRead": "2026-01-01",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [],
+      "genreEnrichedFrom": "none"
     }
   ],
   "stats": {
-    "totalBooks": 16,
+    "totalBooks": 17,
     "yearBreakdown": {
       "2025": 11,
-      "2026": 5
+      "2026": 6
     },
     "genreCount": {
       "Historical Fiction": 4,
