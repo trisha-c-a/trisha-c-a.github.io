@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-17T05:37:32.115Z",
+  "lastUpdated": "2026-08-24T05:40:58.344Z",
   "refreshStatus": "success",
   "books": [
     {
@@ -257,13 +257,26 @@
       "hasDate": true,
       "genres": [],
       "genreEnrichedFrom": "none"
+    },
+    {
+      "goodreadsId": "55709871",
+      "title": "The Devil All the Time",
+      "author": "Donald Ray Pollock",
+      "isbn": "",
+      "isbn13": "",
+      "coverUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1638973129l/55709871._SY475_.jpg",
+      "dateRead": "2026-08-18",
+      "yearRead": 2026,
+      "hasDate": true,
+      "genres": [],
+      "genreEnrichedFrom": "none"
     }
   ],
   "stats": {
-    "totalBooks": 17,
+    "totalBooks": 18,
     "yearBreakdown": {
       "2025": 11,
-      "2026": 6
+      "2026": 7
     },
     "genreCount": {
       "Historical Fiction": 4,
